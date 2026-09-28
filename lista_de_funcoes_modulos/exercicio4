@@ -1,0 +1,10 @@
+import math
+x = 10
+
+def alterar_valor():
+    x = 5
+    print(f"Valor dentro da função: {x}")
+
+alterar_valor()
+
+print(f"Valor fora da função: {x}")

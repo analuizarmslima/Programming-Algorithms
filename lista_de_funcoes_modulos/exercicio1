@@ -1,0 +1,9 @@
+import math
+numero = float(input("Digite um número decimal positivo: "))
+raiz = math.sqrt(numero)
+arredondado_cima = math.ceil(numero)
+arredondado_baixo = math.floor(numero)
+
+print(f'Raiz quadrada:{raiz}')
+print(f'Arredondado para cima:{arredondado_cima}')
+print(f'Arredondado para baixo: {arredondado_baixo}')
