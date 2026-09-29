@@ -12,3 +12,11 @@ cateto_b = float(input("Digite o valor do segundo cateto: "))
 resultado = calcular_hipotenusa(cateto_a, cateto_b)
 
 print(f"A hipotenusa é: {resultado:.2f}")
+# Resposta A: Valor dentro da função: 5
+# Valor fora da função: 10
+
+# Resposta B: O valor de x fora da função não é alterado porque o Python diferencia o Escopo Global do Escopo Local:
+# 1. Escopo Global: A variável x = 10 é criada no corpo principal do código, existindo no escopo global e sendo acessível em todo o programa.
+# 2. Escopo Local: Quando a atribuição x = 5 é feita dentro da função alterar_valor(), o Python não modifica a variável global original. Em vez disso, cria uma nova variável local com o mesmo nome (mecanismo conhecido como "shadowing"), que só existe enquanto a função está a ser executada.
+
+# Após a execução da função, a variável local é destruída e a variável global x permanece inalterada com o valor 10.
